@@ -1,0 +1,102 @@
+Benutzer = {
+	BID:number, BName:string
+	1, 'Jerry'     
+	2, 'Matthias'  
+	3, 'Lara'     
+	4, 'Sophie'    
+}
+
+Shop = {
+	SName:string        , Strasse:string   , Stadt:string , Telefon:number
+	'Coffeeshop Company', 'Espressostr. 2' , 'Bohnenstadt', 5536311       
+	'Coffee Fellows'    , 'Arabica Platz 5', 'Bohnenstadt', 1211133       
+	'Express Coffee'    , 'Bohnenallee 104', 'Bad Kaffee' , 1123112       
+}
+
+Kaffeesorte = {
+	KName:string
+	'Excelsa'   
+	'Arabica'   
+	'Robusta'   
+	'Liberica'  
+}
+
+Variante = {
+	KName:string, Roestung:string, Mahlgrad:string, Lagerbestand:number
+	'Liberica'  , 'Stark'        , 'Fein'         , 4                  
+	'Liberica'  , 'Doppelt'      , 'Grob'         , 0                  
+	'Liberica'  , 'Espresso'     , 'Fein'         , 1                  
+	'Excelsa'   , 'Torrefacto'   , 'Grob'         , 10                 
+	'Excelsa'   , 'Stark'        , 'Fein'         , 2                  
+	'Arabica'   , 'Espresso'     , 'Fein'         , 5                  
+	'Arabica'   , 'Torrefacto'   , 'Grob'         , 9                  
+	'Robusta'   , 'Espresso'     , 'Fein'         , 0                  
+	'Robusta'   , 'Torrefacto'   , 'Grob'         , 3                  
+}
+
+mag = {
+	BID:number, KName:string, Rating:number
+	1     , 'Liberica'  , 0            
+	1     , 'Excelsa'   , 5            
+	1     , 'Arabica'   , 2            
+	2     , 'Liberica'  , 5            
+	2     , 'Robusta'   , 5  
+	2     , 'Excelsa'   , 4   
+	2     , 'Arabica'   , 4             
+	3     , 'Liberica'  , 0            
+	3     , 'Arabica'   , 2            
+	3     , 'Excelsa'   , 4            
+}
+
+verkauft = {
+	SName:string        , KName:string, Roestung:string, Mahlgrad:string
+	'Coffeeshop Germany', 'Liberica'  , 'Stark'        , 'Fein'         
+	'Coffeeshop Germany', 'Liberica'  , 'Doppelt'      , 'Grob'         
+	'Coffeeshop Germany', 'Liberica'  , 'Espresso'     , 'Fein'         
+	'Coffeeshop Germany', 'Excelsa'   , 'Torrefacto'   , 'Grob'         
+	'Coffeeshop Germany', 'Excelsa'   , 'Stark'        , 'Fein'         
+	'Coffeeshop Germany', 'Arabica'   , 'Espresso'     , 'Fein'         
+	'Coffeeshop Germany', 'Arabica'   , 'Torrefacto'   , 'Fein'         
+	'Coffeeshop Germany', 'Robusta'   , 'Espresso'     , 'Fein'         
+	'Coffeeshop Germany', 'Robusta'   , 'Torrefacto'   , 'Grob'         
+	'Coffee Fellows'    , 'Liberica'  , 'Stark'        , 'Fein'         
+	'Coffee Fellows'    , 'Excelsa'   , 'Torrefacto'   , 'Grob'         
+	'Express Coffee'    , 'Robusta'   , 'Espresso'     , 'Fein'         
+	'Express Coffee'    , 'Robusta'   , 'Torrefacto'   , 'Grob'         
+}
+
+
+Automodelle = {
+	AID:number, Name:string, Art:string, Sitze:number
+	1, 'LuxuryCars', 'Cabrio', 2
+	2, 'LuxuryCars', 'SUV', 5
+	3, 'SuperCars', 'Van', 9
+	4, 'Opel Astra', 'Kompaktwagen', 5
+	5, 'VW Golf', 'Kompaktwagen', 5
+}
+
+Zubehoer = {
+	ZID:number, Name:string, Art:string, Preis:number
+	1, 'Super Spoiler', 'Spoiler', 199
+	2, 'Design Scheinwerfer', 'Scheinwerfer', 149
+	3, 'Mega Lautsprecher DeLuxe', 'Lautsprecher', 49
+}
+
+einbaubar = {
+	AID:number, Art:string, maxMenge:number
+	1, 'Spoiler', 1
+	2, 'Spoiler', 1
+	1, 'Lautsprecher', 2
+	2, 'Lautsprecher', 4
+	3, 'Lautsprecher', 12
+	1, 'Auspuffblende', 1
+	2, 'Endschalldaempfer', 1
+	3, 'Auspuffblende', 1
+	3, 'Endschalldaempfer', 1
+	4, 'Lautsprecher', 4
+	5, 'Endschalldaempfer', 5
+	4, 'Spoiler', 1
+	5, 'Spoiler', 1
+	4, 'Auspuffblende', 1
+	5, 'Auspuffblende', 1
+}
